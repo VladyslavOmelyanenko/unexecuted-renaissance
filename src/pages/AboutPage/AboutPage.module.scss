@@ -1,0 +1,64 @@
+.main {
+  display: flex;
+  padding: 0 25px;
+  position: absolute;
+  top: 60px;
+  width: calc(100% - 50px);
+  gap: 25px;
+  
+  .aboutInformation {
+    width: 68%;
+
+    .aboutSection {
+      margin-bottom: 35px;
+
+      &:first-child {
+        margin-top: 30vh;
+      }
+    }
+
+    .aboutTitle {
+      font-size: 24px;
+      margin-bottom: 25px;
+    }
+
+    .aboutText {
+      white-space: pre-wrap;
+      -webkit-text-stroke: 0;
+      letter-spacing: 0;
+    }
+  }
+
+  .images {
+    width: 32%;
+    .imageBlock {
+      img {
+        width: 100%;
+      }
+      p {
+        font-size: 14px;
+        -webkit-text-stroke: 0;
+        letter-spacing: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 0 20px;
+    width: calc(100% - 40px);
+    flex-direction: column-reverse;
+    .aboutInformation {
+      width: 100%;
+      .aboutSection:first-child {
+        margin-top: 35px;
+      }
+    }
+
+    .images {
+      margin-top: 25px;
+      width: 100%;
+    }
+  }
+}

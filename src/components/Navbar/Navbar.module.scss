@@ -1,0 +1,26 @@
+.navbar {
+  height: 60px;
+  width: calc(100% - 50px);
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  position: absolute;
+
+  .navbarLink:hover {
+    font-weight: bold;
+  }
+}
+
+.languages {
+  list-style: none;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+    width: calc(100vw - 40px);
+  }
+}

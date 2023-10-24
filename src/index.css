@@ -1,0 +1,55 @@
+@font-face {
+  font-family: ktf-forma;
+  font-weight: bold;
+  src: url('/public/fonts/KTF2101-Bold.otf');
+}
+
+@font-face {
+  font-family: ktf-forma;
+  font-weight: normal;
+  src: url('/public/fonts/KTF2101-Regular.otf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: ktf-forma;
+  font-size: 18px;
+  -webkit-text-stroke: 0.5px black;
+  letter-spacing: 0.3px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+h1, h2 {
+  font-weight: normal;
+}
+
+pre {
+  font-family: ktf-forma;
+}
+
+* ::-webkit-scrollbar {
+  display: none;
+}
+
+
+* {
+  text-decoration: none;
+  transition: text-decoration 3s;
+}
+
+*:hover {
+  text-decoration: none !important;
+}
+
+i {
+  margin-right: 2px;
+}

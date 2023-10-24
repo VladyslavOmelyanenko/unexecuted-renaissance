@@ -1,0 +1,97 @@
+.main {
+  padding: 0 25px;
+  position: absolute;
+  display: flex;
+  width: calc(100% - 50px);
+  min-height: calc(100vh - 60px);
+
+  .title {
+
+    margin-top: 60px;
+    width: 220px;
+
+    h1 {
+      font-size: 36px;
+      line-height: 34px;
+      text-transform: capitalize;
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+
+    .headingUn {
+      font-style: italic;
+      font-size: inherit;
+      margin-right: 3px;
+    }
+
+    span {
+      font-style: italic;
+      font-size: 14px;
+    }
+  }
+
+  .poetsList {
+    list-style: none;
+    margin-left: 10vw;
+    display: flex;
+    // height: calc(100vh - 60px);
+    // overflow: scroll;
+    flex-direction: column;
+
+    
+    li {
+      margin-bottom: 150px;
+      position: absolute;
+
+    }
+    li:hover {
+      font-weight: bold;
+    }
+  }
+
+  .yearList {
+    width: 100%;
+    height: calc(100vh);
+    overflow: scroll;
+
+    font-size: 18px;
+    margin-left: 10vw;
+    list-style: none;
+
+    li {
+      min-height: 20px;
+
+      div {
+        display: inline-block;
+      }
+
+      pre {
+        display: inline;
+        white-space: pre-wrap;
+      }
+
+      a {
+        opacity: 0;
+      }
+
+      a:hover {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    padding: 0 20px;
+    width: calc(100% - 40px);
+    .yearList {
+      margin-left: 0;
+      height: calc(100vh - 150px);
+    }
+  }
+}
